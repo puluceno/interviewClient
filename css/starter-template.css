@@ -1,0 +1,62 @@
+        html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        padding-top: 40px;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    .starter-template {
+        padding: 0px 15px 40px 15px;
+        text-align: center;
+    }
+
+    .filters {
+        margin: 10px;
+        text-align: center;
+    }
+
+    input[type=checkbox] {
+        transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        padding: 10px;
+    }
+
+    .ng-invalid.ng-dirty {
+        border-color: red;
+    }
+
+    .ng-valid.ng-dirty {
+        border-color: green
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+        .modal-dialog {
+            width: 900px;
+            margin: 30px auto;
+        }
+        .footer {
+            position: absolute;
+            bottom: 25px;
+        }
+        .taskBox {
+            width: auto;
+            border: 1px;
+            border-style: solid;
+            margin: 5px;
+            overflow: auto;
+            height: 250px;
+            max-width: 275px;
+        }
+
+        .submitted {
+          border:1px solid red !important;
+        }
