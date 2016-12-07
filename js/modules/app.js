@@ -13,7 +13,7 @@
         this.getTasks = function() {
             $scope.fetching = true;
             $http({
-                url: "http://localhost:8080/interview",
+                url: "http://35.162.177.114:8080/interview",
                 method: "GET"
             }).success(function(data) {
                 $scope.tasks = data;
@@ -26,7 +26,7 @@
         this.getStatuses = function() {
             $scope.fetching = true;
             $http({
-                url: "http://localhost:8080/interview/statuses",
+                url: "http://35.162.177.114:8080/interview/statuses",
                 method: "GET"
             }).success(function(data) {
                 $scope.statuses = data;
@@ -42,7 +42,7 @@
         this.insertTask = function() {
             $scope.fetching = true;
             $http({
-                url: "http://localhost:8080/interview",
+                url: "http://35.162.177.114:8080/interview",
                 method: "POST",
                 data: $scope.newTask
             }).success(function(data) {
@@ -59,10 +59,9 @@
         };
 
         this.updateTask = function(task) {
-            console.log(task);
             $scope.fetching = true;
             $http({
-                url: "http://localhost:8080/interview",
+                url: "http://35.162.177.114:8080/interview",
                 method: "PUT",
                 data: task
             }).success(function(data) {

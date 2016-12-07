@@ -62,7 +62,7 @@
                                 <label>Tarefa:</label>
                                 <input type="text" ng-model="task.title" placeholder="Tarefa" required/>
                                 <br/>
-                                <button class="btn" ng-click="taskCtrl.updateTask(task)">Save</button>
+                                <button class="btn" ng-click="taskCtrl.updateTask(task)">Salvar</button>
                             </form>
                             <select ng-class="{'text-danger':task.status=='A fazer','text-success':task.status=='Concluída'}" ng-model="task.status" ng-options="status for status in statuses" ng-change="taskCtrl.updateTask(task)"></select>
                         </div>
@@ -73,7 +73,7 @@
                                     <label>Descrição:</label>
                                     <input type="text" ng-model="task.description" placeholder="Descrição"/>
                                     <br/>
-                                    <button class="btn" ng-click="taskCtrl.updateTask(task)">Save</button>
+                                    <button class="btn" ng-click="taskCtrl.updateTask(task)">Salvar</button>
                                 </form>
                             </a>
                             <p>Criada em:
